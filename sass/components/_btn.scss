@@ -1,0 +1,24 @@
+.hero-container__btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    min-width: 200px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primery-title-color);
+    &:hover, &:focus{
+        background: #0a68b6;
+    }
+}
+
+.btn {
+    background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
