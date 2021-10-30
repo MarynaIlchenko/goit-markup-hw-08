@@ -1176,6 +1176,7 @@ body {
 .cases-list__item-box {
   background-color: var(--primery-title-color);
   border: 1px solid #EEEEEE;
+  flex-grow: 1;
   padding: 20px 24px 20px 24px;
   border-top: none;
 }
@@ -1197,7 +1198,8 @@ body {
 }
 
 .cases-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
