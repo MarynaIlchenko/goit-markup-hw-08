@@ -1048,22 +1048,46 @@ body {
 }
 
 .portfolio-hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__container {
   text-align: center;
 }
 
-.portfolio-list {
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-list__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-list__item {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-list__btn {
