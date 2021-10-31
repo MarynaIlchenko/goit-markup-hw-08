@@ -3,11 +3,15 @@
 }
 
 .footer-subscription__online {
-    display: flex;
+    // display: flex;
+    @media screen and (max-width: 767px){
+        display: block;
+
+    }
 }
 
 .footer-subscription__input {
-    width: 358px;
+    // width: 358px;
     height: 50px;
     padding: 15px 16px;
     margin-right: 12px;
@@ -19,6 +23,9 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus{
         border-color: var(--accent-color);
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
     }
 }
 
@@ -33,6 +40,7 @@
     letter-spacing: 0.06em;
     border: none;
     color: var(--primery-title-color);
+  
 }
 
 .footer-subscription__btn {
@@ -44,6 +52,10 @@
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    @media screen and (max-width: 767px){
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
 

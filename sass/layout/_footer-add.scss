@@ -10,18 +10,32 @@
 
 .footer-list{
     display: flex;
+    @media screen and (max-width: 767px){
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .footer__add{
+    // display: block;
+    // box-sizing: border-box;
+    // width: 206px;
+    // margin-right: 93px;
+    @media screen and (min-width: 1200px){
     display: block;
     box-sizing: border-box;
     width: 206px;
     margin-right: 93px;
+    }
 }
 
 .footer__block{
+    // width: 231px;
+    // margin-right: 70px;
+    @media screen and (min-width: 1200px){
     width: 231px;
     margin-right: 70px;
+    }
 }
 
 .footer-list__icon{
