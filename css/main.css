@@ -946,6 +946,12 @@ body {
   margin-bottom: 9px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__list {
+    margin-bottom: 60px;
+  }
+}
+
 .contacts-list__color {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -968,6 +974,7 @@ body {
   .footer-list {
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
