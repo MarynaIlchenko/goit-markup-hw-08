@@ -1,9 +1,10 @@
 .header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc( 16 / 14 );
-    letter-spacing: 0.02em;  
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: calc( 16 / 14 );
+    // letter-spacing: 0.02em;  
     border: 1px solid #ECECEC; 
+     @include font (inherit, 14px, 500, 1.14, 0.02em, inherit);
 }
 
 .header__container {
