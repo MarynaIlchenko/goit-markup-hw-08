@@ -12,8 +12,15 @@
 }
 
 .services__container {
+    // align-items: center;
+    // text-align: center;
+   @media screen and (min-width: 1200px) {
     align-items: center;
     text-align: center;
+   }
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
 }
 
 .services-title__list {
