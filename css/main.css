@@ -286,7 +286,7 @@ body {
   height: 100vh;
   padding: 48px 40px;
   background-color: #fff;
-  transform: translatex(100%);
+  transform: translatex(150%);
   transition: transform 250ms ease-in-out;
 }
 
@@ -396,10 +396,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 400px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
 }
 
@@ -426,6 +426,8 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     width: 1600px;
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -452,10 +454,19 @@ body {
   color: var(--primery-title-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .hero-container__title {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-container__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 
