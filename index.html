@@ -18,15 +18,6 @@
     <header class="header">
         <div class="container header__container">
             <a class="logo header__logo" href="./index.html" lang="en">Web<span class="logo header__logo--white">Studio</span></a>
-            <button type="button" class="menu-button is-open">
-                <svg 
-                width="40" 
-                height="40"
-                aria-label="Переключатель мобильного меню">
-                    <use class="icon-cross" href="./images/sprite.svg#icon-close_24px"></use>
-                    <use class="icon-menu" href="./images/sprite.svg#icon-menu_24px"></use>
-                </svg>
-            </button>
             <nav class="header-navigation">
                 <ul class="header-list list">
                     <li class="header-list__item">
@@ -55,6 +46,15 @@
                     </li>
                 </ul>
             </div>
+            <button class="menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            >
+                <svg class="icon-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <!-- <use class="icon-cross" href="./images/sprite.svg#icon-close_24px"></use> -->
+                    <use href="./images/sprite.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -452,6 +452,19 @@
                 </label>
                 <button type="submit" class="btn modal-field__btn">Отправить</button>
             </form>
+        </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-button js-close-menu">
+        <svg class="icon-cross" width="24" height="16">
+        <use href="./images/sprite.svg#icon-close_24px"></use></svg>
+        </button>
+        <div class="mob-menu__content">
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+                <a class="mob-menu__link link current" href="./index.html">Студия</a>
+            </li>
+        </ul>
         </div>
     </div>
     <script src="./js/modal.js"></script>
