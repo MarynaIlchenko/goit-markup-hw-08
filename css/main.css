@@ -275,7 +275,7 @@ body {
   align-items: center;
 }
 
-.mob-menu-content {
+.mob-menu__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -315,7 +315,6 @@ body {
 
 .mob-menu__list {
   display: block;
-  margin-bottom: 302px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -533,8 +532,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  height: 100%;
   background-color: var(--primery-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -573,6 +572,7 @@ body {
 .modal-field__input-wrapper {
   display: block;
   position: relative;
+  flex-direction: column;
 }
 
 .modal-field__modal-input {

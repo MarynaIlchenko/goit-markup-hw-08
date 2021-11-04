@@ -184,7 +184,7 @@
     align-items: center;
 }
 
-.mob-menu-content{
+.mob-menu__content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -242,7 +242,7 @@
 
 .mob-menu__list{
 display: block;
-margin-bottom: 302px;
+// margin-bottom: 302px;
 }
 
 .mob-menu__item:not(:last-child){
