@@ -35,6 +35,10 @@ img {
   height: auto;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
