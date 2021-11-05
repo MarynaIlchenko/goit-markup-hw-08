@@ -87,14 +87,18 @@
 
 .modal-field__check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color:var(--header-contacts-color);
     display: flex;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .modal-field__check-text span {
@@ -194,11 +198,15 @@
 
 .modal-field__conditions-link {
     margin-left: 4px;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: var(--accent-color);
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__close-icon {

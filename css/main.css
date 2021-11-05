@@ -341,11 +341,17 @@ body {
   display: block;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: #2196F3;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu__tel {
+    font-size: 34px;
+  }
 }
 
 .mob-menu__mail {
@@ -359,9 +365,10 @@ body {
   margin-bottom: 64px;
 }
 
-.mob-bottom-social {
+.mob-bottom-social__list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .mob-bottom-social__link {
@@ -601,14 +608,21 @@ body {
 
 .modal-field__check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--header-contacts-color);
   display: flex;
   margin-bottom: 30px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-field__check-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .modal-field__check-text span {
@@ -712,11 +726,18 @@ body {
 
 .modal-field__conditions-link {
   margin-left: 4px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-field__conditions-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__close-icon {
