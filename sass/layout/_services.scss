@@ -8,7 +8,10 @@
 
 .services {
     padding-top: 0px;
-    padding-bottom: 94px;
+    // padding-bottom: 94px;
+    @media screen and (min-width: 1200px){
+        padding-bottom: 94px;
+    }
 }
 
 .services__container {

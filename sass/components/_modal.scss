@@ -92,7 +92,7 @@
 
 .modal-field__check-text {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color:var(--header-contacts-color);
@@ -101,6 +101,9 @@
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
+    @media screen and (min-width: 480px){
+        font-size: 12px;
+    }
     @media screen and (min-width: 1200px){
         font-size: 14px;
         line-height: calc(24 / 14);
