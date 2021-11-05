@@ -84,6 +84,8 @@
     padding: 63px 24px;
     background-color:var(--accent-color);
     color: var(--primery-title-color);
+    text-align: start;
+    overflow-y: scroll;
     position: absolute;
     top: 0;
     left: 0;
