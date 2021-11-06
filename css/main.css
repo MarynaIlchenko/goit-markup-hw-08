@@ -1297,6 +1297,7 @@ body {
 @media screen and (max-width: 767px) {
   .footer__total {
     display: block;
+    justify-content: space-between;
   }
 }
 
@@ -1329,6 +1330,7 @@ body {
     justify-content: space-around;
     align-items: baseline;
     flex-direction: row;
+    margin-bottom: 60px;
   }
 }
 
@@ -1349,7 +1351,6 @@ body {
   .footer__block {
     justify-content: center;
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
