@@ -520,22 +520,29 @@ body {
 }
 
 .hero-container {
-  max-width: 696px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .hero-container__title {
   display: flex;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 6vw;
   line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-title-color);
+}
+
+@media screen and (min-width: 480px) {
+  .hero-container__title {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
 }
 
 @media screen and (max-width: 1199px) {
