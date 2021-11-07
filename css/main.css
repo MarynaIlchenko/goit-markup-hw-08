@@ -479,9 +479,9 @@ body {
   background-size: cover;
   width: 100vw;
   height: 400px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -508,8 +508,6 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     width: 1600px;
     height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -520,10 +518,6 @@ body {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -558,6 +552,7 @@ body {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -1324,6 +1319,14 @@ body {
   color: var(--primery-title-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer__add-block {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__add-block {
     display: flex;
@@ -1411,7 +1414,6 @@ body {
   .footer__add {
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
