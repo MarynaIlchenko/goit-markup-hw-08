@@ -63,16 +63,6 @@
     }
 }
 
-// .header-contacts__link{
-//     @media screen and (min-width: 768px) {
-//         display: block;
-//         &:not(:last-child){
-        // margin-bottom: 10px;
-        // }
-        // padding-top: 21px;
-        // padding-bottom: 21px;
-//     }
-// }
 
 .header__contacts {
     // display: block;
@@ -204,7 +194,7 @@
         border-radius: 2px;
         background-color: var(--accent-color);
         display: block;
-        bottom: 5px;  
+        bottom: -2.5px;  
         }
     }
 }
@@ -297,6 +287,7 @@
 
 .mob-menu__list{
 display: block;
+margin-bottom: 30px;
 // margin-bottom: 302px;
 }
 
